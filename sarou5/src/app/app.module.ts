@@ -15,6 +15,11 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ListAnnoncesComponent } from './core/Gestion-Annonces/list-annonces/list-annonces.component';
 import { PublierAnnoncesComponent } from './core/Gestion-Annonces/publier-annonces/publier-annonces.component';
 
+import { PublierOffresComponent } from './core/Gestion-Offres/publier-offres/publier-offres.component';
+import { ListOffresComponent } from './core/Gestion-Offres/list-offres/list-offres.component';
+import { ListProduitsNeufsComponent } from './core/Gestion-ProduitsNeufs/list-produits-neufs/list-produits-neufs.component';
+import { PublierProduitsNeufsComponent } from './core/Gestion-ProduitsNeufs/publier-produits-neufs/publier-produits-neufs.component';
+
 
 
 @NgModule({
@@ -29,6 +34,11 @@ import { PublierAnnoncesComponent } from './core/Gestion-Annonces/publier-annonc
     NavbarComponent,
     ListAnnoncesComponent,
     PublierAnnoncesComponent,
+
+    PublierOffresComponent,
+    ListOffresComponent,
+    ListProduitsNeufsComponent,
+    PublierProduitsNeufsComponent,
 
    
   ],
