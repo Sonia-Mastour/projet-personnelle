@@ -5,36 +5,45 @@ import { ListAnnoncesComponent } from './core/Gestion-Annonces/list-annonces/lis
 import { PublierAnnoncesComponent } from './core/Gestion-Annonces/publier-annonces/publier-annonces.component';
 import { ListOffresComponent } from './core/Gestion-Offres/list-offres/list-offres.component';
 import { ListProduitsNeufsComponent } from './core/Gestion-ProduitsNeufs/list-produits-neufs/list-produits-neufs.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 const routes: Routes = [
    
-  // { path: '', pathMatch: 'full', redirectTo: 'ListAnnoncesComponent' },
-  // {
-  //   path: 'client',
-  //   children: [
-      
+  { path: '', pathMatch: 'full', redirectTo: 'client' },
+  {
+    path: 'client',
+    children: [
+      {path: 'login',  component: LoginComponent },
+      {path: 'ForgotPassword',  component:ForgotPasswordComponent},
+      {path: '',  component: ListAnnoncesComponent },
+      {path: 'offres',  component: ListOffresComponent},
+      {path: 'ProduitsNeufs',  component: ListProduitsNeufsComponent },
+      {path: 'SeConnecter',  component: LoginComponent },
+      {path: 'PublierAnnonces',  component: PublierAnnoncesComponent },
      
       
 
 
 
-  //   ]
-  // },
-  {
-  
-    path: 'client',
-    children: [
-  {path: 'login',  component: LoginComponent },
-  {path: '',  component: ListAnnoncesComponent },
-  {path: 'offres',  component: ListOffresComponent},
-  {path: 'ProduitsNeufs',  component: ListProduitsNeufsComponent },
-  {path: 'SeConnecter',  component: LoginComponent },
-  {path: 'PublierAnnonces',  component: PublierAnnoncesComponent },
     ]
-  }
+  },
+  // {
+  
+  //   path: 'client',
+  //   children: [
+  // {path: 'login',  component: LoginComponent },
+  // {path: 'ForgotPassword',  component:ForgotPasswordComponent},
+  // {path: '',  component: ListAnnoncesComponent },
+  // {path: 'offres',  component: ListOffresComponent},
+  // {path: 'ProduitsNeufs',  component: ListProduitsNeufsComponent },
+  // {path: 'SeConnecter',  component: LoginComponent },
+  // {path: 'PublierAnnonces',  component: PublierAnnoncesComponent },
+  
+  //   ]
+  // }
  
 ];
 

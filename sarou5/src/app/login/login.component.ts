@@ -7,6 +7,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
+  
   ngOnInit(): void {
     
     throw new Error('Method not implemented.');

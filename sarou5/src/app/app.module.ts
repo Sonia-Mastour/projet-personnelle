@@ -19,6 +19,7 @@ import { PublierOffresComponent } from './core/Gestion-Offres/publier-offres/pub
 import { ListOffresComponent } from './core/Gestion-Offres/list-offres/list-offres.component';
 import { ListProduitsNeufsComponent } from './core/Gestion-ProduitsNeufs/list-produits-neufs/list-produits-neufs.component';
 import { PublierProduitsNeufsComponent } from './core/Gestion-ProduitsNeufs/publier-produits-neufs/publier-produits-neufs.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 
@@ -39,6 +40,7 @@ import { PublierProduitsNeufsComponent } from './core/Gestion-ProduitsNeufs/publ
     ListOffresComponent,
     ListProduitsNeufsComponent,
     PublierProduitsNeufsComponent,
+    ForgotPasswordComponent,
 
    
   ],
