@@ -16,7 +16,6 @@ export class PublierAnnoncesComponent implements OnInit {
 
 
 	ngOnInit(): void {
-        document!.addEventListener('readystatechange', event => { 
             const steps = Array.from(document.querySelectorAll("form .step"));
             const nextBtn = document.querySelectorAll("form .next-btn");
             const prevBtn = document.querySelectorAll("form .previous-btn");
@@ -60,7 +59,6 @@ export class PublierAnnoncesComponent implements OnInit {
               }
               steps[index].classList.add("active");
             }
-        });
 
 
 
