@@ -1,52 +1,86 @@
-<section>
+<section style="background-color: #eee;">
   <div class="container">
     <form>
 
       <div class="step step-1 active">
         <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="first-name">
+          <label for="Titre de l'annonce">catégorie</label>
+          <select  class="form-group" name="catégorie  " id="catégorie">
+            <option value="volvo">Véhicules</option>
+            <option value="saab">Pour la Maison et Jardin</option>
+            <option value="mercedes">Immobilier</option>
+            <option value="audi">Entreprises</option>
+            <option value="audi">Habillement et Bien Etre</option>
+            <option value="audi">Informatique et Multimedias</option>
+            <option value="audi">Loisirs et Divertissement</option>
+            <option value="audi">Autres</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="last-name">
+          <label for="Titre de l'annonce">Type catégorie</label>
+          <select  class="form-group" name="catégorie  " id="catégorie">
+            <option value="volvo">offres </option>
+            <option value="saab">produits neufs</option>
+            <option value="mercedes">occation</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="Titre de l'annonce">Titre de l'annonce</label>
+          <input type="text" id="fTitre de l'annonce" name="Titre de l'annonce">
         </div>
         <div class="form-group">
-          <label for="nickName">Nick Name</label>
-          <input type="text" id="nickName" name="nick-name">
+          <label for="Description du produit/service">Description du produit/service</label>
+          <!-- <input type="text" id="Description du produit/service" name="Description du produit/service"> -->
+
+          <textarea id="Description du produit/service" name="Description du produit/service"   rows="5" cols="43">
+           
+          </textarea>
         </div>
+       
         <button type="button" class="next-btn">Next</button>
       </div>
 
       <div class="step step-2">
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email">
+          <label for="email">image</label>
+          <input type="file" id="image" name="image">
+        </div>
+        <div class="form-group">
+          <label for="Prix">Prix</label>
+          <input type="number" id="Prix" name="Prix">
         </div>
         <div class="form-group">
           <label for="phone">Phone</label>
           <input type="number" id="phone" name="phone-number">
         </div>
-        <button type="button" class="previous-btn">Prev</button>
-        <button type="button" class="next-btn">Next</button>
-      </div>
-
-      <div class="step step-3">
         <div class="form-group">
-          <label for="country">country</label>
-          <input type="text" id="country" name="country">
-        </div>
-        <div class="form-group">
-          <label for="city">City</label>
-          <input type="text" id="city" name="city">
-        </div>
-        <div class="form-group">
-          <label for="postCode">Post Code</label>
-          <input type="text" id="postCode" name="post-code">
+          <label for="ville">ville</label>
+          <input type="text" id="ville" name="ville">
         </div>
         <button type="button" class="previous-btn">Prev</button>
         <button type="submit" class="submit-btn">Submit</button>
       </div>
+
+
+
+
+      <!-- <div class="step step-3">
+        <div class="form-group">
+          <label for="ville">ville</label>
+          <input type="text" id="ville" name="ville">
+        </div>
+        <div class="form-group">
+          <label for="city">********</label>
+          <input type="text" id="city" name="city">
+        </div>
+        <div class="form-group">
+          <label for="postCode"></label>
+          <input type="text" id="postCode" name="post-code">
+        </div>
+        <button type="button" class="previous-btn">Prev</button>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div> -->
 
     </form>
   </div>
