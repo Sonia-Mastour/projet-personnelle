@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-////declation bd/////////////////// 
+
 var db=require('./models');
 db.sequelize.sync().then(()=>{
   console.log('db connected')
