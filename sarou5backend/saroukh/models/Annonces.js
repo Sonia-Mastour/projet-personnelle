@@ -41,6 +41,7 @@ module.exports=(sequelize,DataTypes)=>{
 
     Annonces.associate = models => {
         Annonces.belongsTo(models.Users,{onDelete:"cascade"})
+        Annonces.belongsTo(models.Type_Annonces,{onDelete:"cascade"})
 
     }
    
